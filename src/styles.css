@@ -91,7 +91,7 @@ body {
     margin-left: 4px;
 }
 
-.navbar-sidenav li:first-child .nav-link-text, .navbar-sidenav li:first-child i {
+.navbar-sidenav  .active-link .nav-link-text, .navbar-sidenav li .active-link i {
     color: #3F53C9;
 }
 @media (min-width:968px){

@@ -9,6 +9,7 @@ html {
   
   .body.sticky-footer {
     margin-bottom: 56px;
+    margin-bottom: 0;
   }
   
   .body.sticky-footer .content-wrapper {
@@ -17,7 +18,9 @@ html {
   
   .body.fixed-nav {
     padding-top: 56px;
+    position: relative;
   }
+  
   
   .content-wrapper {
     min-height: calc(100vh - 56px);
@@ -258,17 +261,17 @@ html {
     color: rgba(0, 0, 0, 0.5);
   }
   
-  body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
+  .body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
     overflow-x: hidden;
     width: 55px;
   }
   
-  body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-item,
-  body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
+  .body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-item,
+  .body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
     width: 55px !important;
   }
   
-  body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
+  .body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -287,7 +290,7 @@ html {
     }
   }
   
-  body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
+  .body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -297,6 +300,7 @@ html {
   }
   
   .content-wrapper {
+    /* position: relative; */
     overflow-x: hidden;
     /* background: white; */
   }

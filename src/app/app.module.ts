@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import { ProjectsComponent } from './layouts/projects/projects.component';
 import { DetailsProjectComponent } from './layouts/details-project/details-project.component';
+import { RegistersComponent } from './layouts/registers/registers.component';
+import { DefaultHomeComponent } from './layouts/default-home/default-home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DetailsProjectComponent } from './layouts/details-project/details-proje
     LoginComponent,
     DashboardComponent,
     ProjectsComponent,
-    DetailsProjectComponent
+    DetailsProjectComponent,
+    RegistersComponent,
+    DefaultHomeComponent
   ],
   imports: [
     BrowserModule,
