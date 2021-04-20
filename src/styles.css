@@ -4,7 +4,7 @@
 
 :root {
     --c-orange: #FFDAC0;
-    --c-blue : #182554;
+    --c-blue : #031146;
     --c-blue-light: #0098FF;
 }
 
@@ -24,7 +24,7 @@ h3,h2,h1, p {
     font-family: 'Nunito', sans-serif;
 }
 .title-color {
-    color:#182554;
+    color:#071442;
     
     margin-bottom: 30px;
     /* color: var(--c-blue); */
@@ -40,13 +40,13 @@ h3.title-color {
 }
 
 .form-content button {
-    background-color: #0098FF;
+    background-color: #021f33;
     width: 100%;
     padding:12px;
     color:white;
 }
 .link-color {
-    color: #0098FF;
+    color: #4393c9;
 }
 .c-description {
     text-align: center;

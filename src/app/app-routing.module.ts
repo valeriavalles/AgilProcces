@@ -34,6 +34,7 @@ const routes: Routes = [
         path:'registers', 
         component: RegistersComponent ,
       }
+      
     ] },
 
   { path:'login', component:LoginComponent},
