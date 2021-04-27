@@ -1,11 +1,9 @@
-
-<div class="content-detalles">
-    <h3>Proyecto: Personalizacion Vida</h3> 
-    <p><strong>Squad:</strong> SMT Continuidad Journey </p>
-
+<div *ngFor="let item of projects" class="content-detalles">
+    <h3>Proyecto: {{ item.title }}</h3>
+    <p><strong>Squad:</strong> {{ item.squad }}</p>
     <div>
         <div class="mt-4 mb-4">
-            Filtrar Por: 
+            Filtrar Por:
             <div class="d-flex justify-content-start mt-3">
                 <div>
                     <select id="cars">
@@ -28,7 +26,7 @@
         </div>
         <div class="detalls-table">
             <div>
-                <div> <span> Nombre</span></div>
+                <div><span> Nombre</span></div>
                 <div>Perfil</div>
                 <div>Empresa</div>
                 <div>Tarifa</div>
@@ -36,35 +34,17 @@
                 <div>Total ejecutable</div>
                 <div>Editar</div>
             </div>
-            <div>
-                <div> <span>José Felipe Tuesta</span> </div>
-                <div>Developer Backend</div>
-                <div>INDRA</div>
-                <div>S/ 63.26, 22,</div>
-                <div>22</div>
-                <div>S/ 11 133.76</div>
-                <div>Asignación</div>
-            </div>
-            <div>
-                <div>Roberto Gómez Bolaños</div>
-                <div>Developer Backend</div>
-                <div>INDRA</div>
-                <div>S/ 63.26, 22,</div>
-                <div>22</div>
-                <div>S/ 11 133.76</div>
-                <div>Asignación</div>
-            </div>
-            <div>
-                <div>Marco Ludeña Farje</div>
-                <div>Developer Backend</div>
-                <div>INDRA</div>
-                <div>S/ 63.26, 22,</div>
-                <div>22</div>
-                <div>S/ 11 133.76</div>
+            <div *ngFor="let n of item.team">
+                <div> <span>{{ n.name }}</span> </div>
+                <div>{{ n.perfil }}</div>
+                <div>{{ n.empresa }}</div>
+                <div>S/ {{ n.tarifa }}</div>
+                <div>{{ n.dias }}</div>
+                <div>S/ {{ n.tarifa }}*{{ n.dias }}</div>
                 <div>Asignación</div>
             </div>
         </div>
-        
+
     </div>
 
     <div class="mt-5">
