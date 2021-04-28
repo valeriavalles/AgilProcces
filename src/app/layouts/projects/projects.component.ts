@@ -9,7 +9,7 @@ import { ProjectService } from 'src/app/services/project.service';
 export class ProjectsComponent implements OnInit {
 
   projects = [];
-
+  // isHidden: boolean=true;
   constructor(private readonly projectService: ProjectService) { }
 
   getProjects() {
@@ -20,9 +20,11 @@ export class ProjectsComponent implements OnInit {
     })
   }
 
-  detalle(){
-    console.log('hola') 
-  }
+  // detalle(){
+  //   // console.log('hola') 
+  //   this.isHidden;
+  //   // console.log(this.isHidden)
+  // }
 
   ngOnInit(): void {
     this.getProjects();

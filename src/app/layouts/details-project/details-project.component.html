@@ -1,4 +1,4 @@
-<div *ngFor="let item of projects" class="content-detalles">
+<div *ngFor="let item of projects" class="content-detalles" [hidden]="isHidden">
     <h3>Proyecto: {{ item.title }}</h3>
     <p><strong>Squad:</strong> {{ item.squad }}</p>
     <div>

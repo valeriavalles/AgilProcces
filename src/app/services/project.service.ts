@@ -11,4 +11,8 @@ export class ProjectService {
   getProject() {
     return this.http.get('/api/project/GetProject');
   }
+
+  getNoticia(){
+    return this.http.get('')
+   }
 }
