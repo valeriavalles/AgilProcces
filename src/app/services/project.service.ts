@@ -13,6 +13,6 @@ export class ProjectService {
   }
 
   getNoticia(){
-    return this.http.get('')
+    return this.http.get('https://localhost:44309/api/Noticias/GetNoticia')
    }
 }
